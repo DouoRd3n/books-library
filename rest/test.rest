@@ -1,0 +1,78 @@
+POST http://localhost:8080/admin/person/create
+Content-Type: application/json
+
+{
+  "login": "Ivan Volkov",
+  "password": "MALE",
+  "role": "READER"
+}
+
+###
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "login": "Ivan Volkov",
+  "password": "MALE"
+
+}
+
+###
+
+GET http://localhost:8080/admin/person
+
+###
+GET http://localhost:8080/admin/person/1
+
+###
+DELETE http://localhost:8080/admin/person/22
+
+###
+
+PATCH http://localhost:8080/admin/person/2
+Content-Type: application/json
+
+{
+  "password": "MALE"
+}
+
+###
+
+GET http://localhost:8080/writer/books
+
+###
+
+GET http://localhost:8080/writer/books/1
+
+###
+
+DELETE http://localhost:8080/writer/books/2
+
+###
+POST http://localhost:8080/writer/books/create
+Content-Type: application/json
+
+{
+  "title": "author4",
+  "author": "title4"
+}
+
+###
+
+PATCH http://localhost:8080/writer/books/1
+Content-Type: application/json
+
+{
+  "title": "authorUpdate"
+
+}
+
+###
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+  "login": "Ivan Volkov",
+  "password": "MALE"
+
+}

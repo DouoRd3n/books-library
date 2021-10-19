@@ -1,0 +1,6 @@
+--
+-- INSERT INTO "Person" (id, login, password) values (1, 'dou', 'qwerty');
+-- insert into roles(id, role_name) values (1, 'admin');
+-- INSERT INTO person_roles(person_id, role_id) values (1,1);
+-- insert into books(id, title, author) values (1, 'forgothen', 'salvadore');
+-- insert into person_books(person_id, books_id) values (1,1);
